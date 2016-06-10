@@ -35,12 +35,6 @@ var config = getConfig({
   }
 });
 
-config.postcss = [].concat([
-  require('precss')({}),
-  require('autoprefixer')({}),
-  require('cssnano')({})
-])
-
 // ENV variables
 const dotEnvVars = dotenv.config();
 const environmentEnv = dotenv.config({
